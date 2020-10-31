@@ -5,7 +5,7 @@ function Tavolo(props){
 	let tavolo=[];
 	for(let i=0;i<7;i++){
 		tavolo.push(
-			<Col>
+			<Col key={i}>
 				<Colonna onClick={()=>props.onClick(i)} valori={props.griglia[i]}/>
 			</Col>
 		);
@@ -17,16 +17,16 @@ function Colonna(props){
 	let colonna=[];
 			for(let i=5;i>=0;i--){
 				colonna.push(
-					<Row><Cella onClick={props.onClick} valore={props.valori[i]}/></Row>
+					<Row className="flex-nowrap no-gutters" key={i}><Cella onClick={props.onClick} valore={props.valori[i]}/></Row>
 				);
 			}
 	return colonna;
 }
 
 function Cella(props) {
-
+	let classname="square "+props.valore;
 	return (
-	<Col><button onClick={props.onClick} className="square">{props.valore}</button></Col>
+	<Col><button onClick={props.onClick} className={classname}></button></Col>
 	);
 }
 

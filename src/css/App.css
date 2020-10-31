@@ -6,25 +6,37 @@
   color: #61dafb;
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 50px;
-  height: 50px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 50px;
-}
-
 .square:focus {
   outline: none;
 }
 
 .col{
   flex-grow: 0 !important;
+}
+
+
+.square {
+  background: #fff;
+  /*border: 1px solid rgb(0, 0, 0);*/
+  border: none;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+  /*margin-right: -2px;
+  margin-top: -2px;*/
+  padding: 0;
+  text-align: center;
+  width: 50px;
+
+  background-image: url(./base.bmp);
+}
+
+.X{
+  background-image: url('./rosso.bmp');
+}
+
+.O{
+  background-image: url('./giallo.bmp');
 }
