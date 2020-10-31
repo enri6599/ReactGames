@@ -1,7 +1,7 @@
-/*body{
+body{
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
-}*/
+}
 
 .square:focus {
   outline: none;
@@ -26,13 +26,13 @@
   float: left;
   height: 50px;
   width: 50px;
-  background-image: url(../img/base.bmp);
+  background-image: url(../img/base.png);
 }
 
 .X{
-  background-image: url('../img/rosso.bmp');
+  background-image: url('../img/rosso.png');
 }
 
 .O{
-  background-image: url('../img/giallo.bmp');
+  background-image: url('../img/giallo.png');
 }

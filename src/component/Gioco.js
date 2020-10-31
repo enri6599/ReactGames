@@ -62,8 +62,9 @@ class Gioco extends Component{
 		else if(stepNum >= 42)
 			stato = "Pareggio";
 		else
-			stato= stepNum+ ": Tocca al player: " + (this.state.xTurn? "Rosso":"Giallo");
+			stato= "Tocca al player: " + (this.state.xTurn? "Rosso":"Giallo");
 		
+		let turno="Turno: "+stepNum;
 
 		let btnBackDis=stepNum===0;
 		let btnFrontDis=stepNum===history.length-1
@@ -74,15 +75,14 @@ class Gioco extends Component{
 				
 				<Tavolo onClick={this.handleClick} griglia={history[stepNum].griglia}/>
 				<div className="game-info">
-					<div>{"Irene Biancardi"}</div>
+					<div>{turno}</div>
 					<div >{stato}</div>
 					<div>
 						<button disabled={btnBackDis} onClick={()=>this.modStep(-1)}>{"<--"}</button>
+						<span> </span>
 						<button disabled={btnFrontDis} onClick={()=>this.modStep(1)}>{"-->"}</button>
 					</div>
-					
 				</div>
-				
 			</div>
 			
 		);
