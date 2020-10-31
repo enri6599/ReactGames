@@ -1,10 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/*body{
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}*/
 
 .square:focus {
   outline: none;
@@ -14,29 +11,28 @@
   flex-grow: 0 !important;
 }
 
+.game {
+  display: flex;
+  flex-direction: row;
+  margin : 10px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
 
 .square {
-  background: #fff;
-  /*border: 1px solid rgb(0, 0, 0);*/
   border: none;
   float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 50px;
   height: 50px;
-  /*margin-right: -2px;
-  margin-top: -2px;*/
-  padding: 0;
-  text-align: center;
   width: 50px;
-
-  background-image: url(./base.bmp);
+  background-image: url(../img/base.bmp);
 }
 
 .X{
-  background-image: url('./rosso.bmp');
+  background-image: url('../img/rosso.bmp');
 }
 
 .O{
-  background-image: url('./giallo.bmp');
+  background-image: url('../img/giallo.bmp');
 }
