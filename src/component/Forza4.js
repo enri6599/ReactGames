@@ -1,9 +1,10 @@
 import /*react,*/ {Component} from 'react';
+import {Button} from 'reactstrap';
 //import {Row} from 'reactstrap'
 import Tavolo from './Tavolo';
 import checkWin from './controlloVittoria';
 
-class Gioco extends Component{
+class Forza4 extends Component{
 	constructor(props){
 		super(props);
 
@@ -15,10 +16,6 @@ class Gioco extends Component{
 			stepNum : 0,
 			xTurn	: true,/*X = rosso - O = giallo*/
 		};
-
-
-		this.handleClick=this.handleClick.bind(this);
-		//this.modStep=this.modStep.bind(this);
 	}
 	
 	handleClick(i){
@@ -73,14 +70,14 @@ class Gioco extends Component{
 		return(
 			<div className="game">
 				
-				<Tavolo onClick={this.handleClick} griglia={history[stepNum].griglia}/>
+				<Tavolo onClick={(i)=>this.handleClick(i)} griglia={history[stepNum].griglia}/>
 				<div className="game-info">
 					<div>{turno}</div>
 					<div >{stato}</div>
 					<div>
-						<button disabled={btnBackDis} onClick={()=>this.modStep(-1)}>{"<--"}</button>
+						<Button color="primary" disabled={btnBackDis} onClick={()=>this.modStep(-1)}>{"<--"}</Button>
 						<span> </span>
-						<button disabled={btnFrontDis} onClick={()=>this.modStep(1)}>{"-->"}</button>
+						<Button color="primary" disabled={btnFrontDis} onClick={()=>this.modStep(1)}>{"-->"}</Button>
 					</div>
 				</div>
 			</div>
@@ -97,4 +94,4 @@ class Gioco extends Component{
 
 
 
-export default Gioco;
+export default Forza4;

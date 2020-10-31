@@ -3,7 +3,7 @@ body{
   margin: 20px;
 }
 
-.square:focus {
+.f4square:focus {
   outline: none;
 }
 
@@ -14,14 +14,13 @@ body{
 .game {
   display: flex;
   flex-direction: row;
-  margin : 10px;
 }
 
 .game-info {
   margin-left: 20px;
 }
 
-.square {
+.f4square {
   border: none;
   float: left;
   height: 50px;
