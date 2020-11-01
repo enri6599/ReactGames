@@ -1,37 +1,55 @@
 body{
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  background-color: #859ae0 !important;
+  padding: 20px;
 }
 
-.f4square:focus {
-  outline: none;
+.sito{
+  text-align: center;
 }
 
-.col{
-  flex-grow: 0 !important;
+.conent{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .game {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row-reverse;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .game-info {
   margin-left: 20px;
 }
 
-.f4square {
-  border: none;
-  float: left;
-  height: 50px;
-  width: 50px;
-  background-image: url(../img/base.png);
+.status {
+  margin-bottom: 10px;
 }
 
-.X{
-  background-image: url('../img/rosso.png');
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
 }
 
-.O{
-  background-image: url('../img/giallo.png');
+ul.header li a{
+  color: #FFF; 
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }
+ul.header li a:hover{
+  background-color: blue;
+}
+
+.btn{
+  margin: 2px;
+  background-color: blue !important;
+}
+

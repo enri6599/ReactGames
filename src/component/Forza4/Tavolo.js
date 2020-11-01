@@ -1,6 +1,5 @@
 import { Row, Col } from 'reactstrap';
 
-
 function Tavolo(props){
 	let tavolo=[];
 	for(let i=0;i<7;i++){
@@ -25,6 +24,7 @@ function Colonna(props){
 
 function Cella(props) {
 	let classname="f4square "+props.valore;
+
 	return (
 	<Col><button onClick={props.onClick} className={classname}></button></Col>
 	);

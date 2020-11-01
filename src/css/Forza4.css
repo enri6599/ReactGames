@@ -1,0 +1,30 @@
+.f4square {
+    /*display: block;*/
+    border: none;
+    /*float: left;*/
+    height: 80px;
+    width: 80px;
+    /*background-image: url(../img/base.png);*/
+    border-radius: 50%;
+    border: solid blue;
+    background-color: white;
+  }
+
+
+  .X{
+    /*background-image: url('../img/rosso.png');*/
+    background-color: red;
+  }
+  
+  .O{
+    /*background-image: url('../img/giallo.png');*/
+    background-color: yellow;
+  }
+
+  .f4square:focus {
+    outline: none;
+  }
+
+  .col{
+    flex-grow: 0 !important;
+  }
