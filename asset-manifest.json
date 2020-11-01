@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/progettoReact/static/css/main.09bb0405.chunk.css",
+    "main.css": "/progettoReact/static/css/main.c60c0bea.chunk.css",
     "main.js": "/progettoReact/static/js/main.001cff3d.chunk.js",
     "main.js.map": "/progettoReact/static/js/main.001cff3d.chunk.js.map",
     "runtime-main.js": "/progettoReact/static/js/runtime-main.5bd70fc4.js",
@@ -12,7 +12,7 @@
     "static/js/3.5d0aa403.chunk.js.map": "/progettoReact/static/js/3.5d0aa403.chunk.js.map",
     "index.html": "/progettoReact/index.html",
     "static/css/2.e88b3fd2.chunk.css.map": "/progettoReact/static/css/2.e88b3fd2.chunk.css.map",
-    "static/css/main.09bb0405.chunk.css.map": "/progettoReact/static/css/main.09bb0405.chunk.css.map",
+    "static/css/main.c60c0bea.chunk.css.map": "/progettoReact/static/css/main.c60c0bea.chunk.css.map",
     "static/js/2.47bea4b5.chunk.js.LICENSE.txt": "/progettoReact/static/js/2.47bea4b5.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/progettoReact/static/media/fontawesome-webfont.f691f37e.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.5bd70fc4.js",
     "static/css/2.e88b3fd2.chunk.css",
     "static/js/2.47bea4b5.chunk.js",
-    "static/css/main.09bb0405.chunk.css",
+    "static/css/main.c60c0bea.chunk.css",
     "static/js/main.001cff3d.chunk.js"
   ]
 }
