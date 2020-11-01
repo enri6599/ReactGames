@@ -1,12 +1,12 @@
 import './css/App.css';
 import Forza4 from './component/Forza4/Forza4';
 import Tris from './component/Tris/Tris';
-import {BrowserRouter, Link, Switch, Route} from "react-router-dom";
+import {HashRouter, Link, Switch, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="sito">
-      <BrowserRouter>
+      <HashRouter>
         <h1>Giochi in React</h1>
         <ul className="header">
           <li key='h0'><Link to="/">Forza4</Link></li>
@@ -21,7 +21,7 @@ function App() {
           </Switch>
           
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

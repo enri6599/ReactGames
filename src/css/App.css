@@ -1,22 +1,10 @@
 body{
   background-color: #859ae0 !important;
-  padding: 20px;
+  
 }
 
 .sito{
   text-align: center;
-}
-
-.conent{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.game {
-  display: flex;
-  /*flex-direction: row-reverse;*/
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .game-info {
@@ -26,6 +14,8 @@ body{
 .status {
   margin-bottom: 10px;
 }
+
+
 
 ul.header li {
   display: inline;

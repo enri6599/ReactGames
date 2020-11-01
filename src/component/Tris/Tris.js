@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import {Button} from 'reactstrap';
+import {Button, Container, Row, Col, Alert} from 'reactstrap';
 import "../../css/Tris.css";
 
 function Square (props){
@@ -20,16 +20,16 @@ class Board extends Component {
         for(let j=0;j<3;j++){
           let squareNum=3*i+j;
           children.push(
-              <Square
-                key={j}
-                value={this.props.current.squares[squareNum]} 
-                onClick={()=>this.props.onClick(squareNum)}
-                selected={
-                  this.props.current.buttonclicked===squareNum || 
-                  (this.props.winline?this.props.winline.some(el=>el===squareNum):false)}
-              />);
+                <Square
+                  key={j}
+                  value={this.props.current.squares[squareNum]} 
+                  onClick={()=>this.props.onClick(squareNum)}
+                  selected={
+                    this.props.current.buttonclicked===squareNum || 
+                    (this.props.winline?this.props.winline.some(el=>el===squareNum):false)}
+                />);
         }
-        table.push(<div key={i} className="board-row">{children}</div>);
+        table.push(<Row className="flex-nowrap no-gutters" key={i}>{children}</Row>);
       }
       return table;
   }
@@ -37,6 +37,7 @@ class Board extends Component {
   render() {
     return (
         this.renderSquare()
+        
     );
   }
 }
@@ -105,23 +106,25 @@ class Tris extends Component {
     } else if(this.state.stepNumber===9){
       status='Pareggio'
     }else{
-      status = 'Tocca ad ' + (this.state.xIsNext ? 'X' : 'O');
+      status = 'Turno di ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
     return (
-      <div className="game">
-        <div className="game-board">
-          <Board 
-            current={current}
-            onClick={(i)=>this.handleClick(i)}
-            winline={winner?winner.winline:null}
-          />
-        </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-        </div>
-      </div>
+      <Container>
+        <Row className="justify-content-center">
+          <Col>
+            <Alert color="danger">{status}</Alert>
+            <Board 
+              current={current}
+              onClick={(i)=>this.handleClick(i)}
+              winline={winner?winner.winline:null}
+            />
+          </Col>
+          <Col md="auto">
+              <ol>{moves}</ol>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
