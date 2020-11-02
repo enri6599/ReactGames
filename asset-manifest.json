@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/progettoReact/static/css/main.bf2887ea.chunk.css",
-    "main.js": "/progettoReact/static/js/main.2d00d5e5.chunk.js",
-    "main.js.map": "/progettoReact/static/js/main.2d00d5e5.chunk.js.map",
+    "main.css": "/progettoReact/static/css/main.15f65739.chunk.css",
+    "main.js": "/progettoReact/static/js/main.d757357d.chunk.js",
+    "main.js.map": "/progettoReact/static/js/main.d757357d.chunk.js.map",
     "runtime-main.js": "/progettoReact/static/js/runtime-main.22f2c74e.js",
     "runtime-main.js.map": "/progettoReact/static/js/runtime-main.22f2c74e.js.map",
-    "static/css/2.e88b3fd2.chunk.css": "/progettoReact/static/css/2.e88b3fd2.chunk.css",
-    "static/js/2.244c0001.chunk.js": "/progettoReact/static/js/2.244c0001.chunk.js",
-    "static/js/2.244c0001.chunk.js.map": "/progettoReact/static/js/2.244c0001.chunk.js.map",
+    "static/css/2.a67478a1.chunk.css": "/progettoReact/static/css/2.a67478a1.chunk.css",
+    "static/js/2.334a546b.chunk.js": "/progettoReact/static/js/2.334a546b.chunk.js",
+    "static/js/2.334a546b.chunk.js.map": "/progettoReact/static/js/2.334a546b.chunk.js.map",
     "static/js/3.0aaa1393.chunk.js": "/progettoReact/static/js/3.0aaa1393.chunk.js",
     "static/js/3.0aaa1393.chunk.js.map": "/progettoReact/static/js/3.0aaa1393.chunk.js.map",
     "index.html": "/progettoReact/index.html",
-    "static/css/2.e88b3fd2.chunk.css.map": "/progettoReact/static/css/2.e88b3fd2.chunk.css.map",
-    "static/css/main.bf2887ea.chunk.css.map": "/progettoReact/static/css/main.bf2887ea.chunk.css.map",
-    "static/js/2.244c0001.chunk.js.LICENSE.txt": "/progettoReact/static/js/2.244c0001.chunk.js.LICENSE.txt",
+    "static/css/2.a67478a1.chunk.css.map": "/progettoReact/static/css/2.a67478a1.chunk.css.map",
+    "static/css/main.15f65739.chunk.css.map": "/progettoReact/static/css/main.15f65739.chunk.css.map",
+    "static/js/2.334a546b.chunk.js.LICENSE.txt": "/progettoReact/static/js/2.334a546b.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/progettoReact/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.22f2c74e.js",
-    "static/css/2.e88b3fd2.chunk.css",
-    "static/js/2.244c0001.chunk.js",
-    "static/css/main.bf2887ea.chunk.css",
-    "static/js/main.2d00d5e5.chunk.js"
+    "static/css/2.a67478a1.chunk.css",
+    "static/js/2.334a546b.chunk.js",
+    "static/css/main.15f65739.chunk.css",
+    "static/js/main.d757357d.chunk.js"
   ]
 }
