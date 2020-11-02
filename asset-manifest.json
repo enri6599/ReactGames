@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/progettoReact/static/css/main.15f65739.chunk.css",
-    "main.js": "/progettoReact/static/js/main.43541db0.chunk.js",
-    "main.js.map": "/progettoReact/static/js/main.43541db0.chunk.js.map",
-    "runtime-main.js": "/progettoReact/static/js/runtime-main.22f2c74e.js",
-    "runtime-main.js.map": "/progettoReact/static/js/runtime-main.22f2c74e.js.map",
+    "main.css": "/progettoReact/static/css/main.ff5f9ad6.chunk.css",
+    "main.js": "/progettoReact/static/js/main.f283fd8f.chunk.js",
+    "main.js.map": "/progettoReact/static/js/main.f283fd8f.chunk.js.map",
+    "runtime-main.js": "/progettoReact/static/js/runtime-main.f732287b.js",
+    "runtime-main.js.map": "/progettoReact/static/js/runtime-main.f732287b.js.map",
     "static/css/2.a67478a1.chunk.css": "/progettoReact/static/css/2.a67478a1.chunk.css",
-    "static/js/2.334a546b.chunk.js": "/progettoReact/static/js/2.334a546b.chunk.js",
-    "static/js/2.334a546b.chunk.js.map": "/progettoReact/static/js/2.334a546b.chunk.js.map",
-    "static/js/3.0aaa1393.chunk.js": "/progettoReact/static/js/3.0aaa1393.chunk.js",
-    "static/js/3.0aaa1393.chunk.js.map": "/progettoReact/static/js/3.0aaa1393.chunk.js.map",
+    "static/js/2.5339e3f2.chunk.js": "/progettoReact/static/js/2.5339e3f2.chunk.js",
+    "static/js/2.5339e3f2.chunk.js.map": "/progettoReact/static/js/2.5339e3f2.chunk.js.map",
+    "static/js/3.8e069373.chunk.js": "/progettoReact/static/js/3.8e069373.chunk.js",
+    "static/js/3.8e069373.chunk.js.map": "/progettoReact/static/js/3.8e069373.chunk.js.map",
     "index.html": "/progettoReact/index.html",
     "static/css/2.a67478a1.chunk.css.map": "/progettoReact/static/css/2.a67478a1.chunk.css.map",
-    "static/css/main.15f65739.chunk.css.map": "/progettoReact/static/css/main.15f65739.chunk.css.map",
-    "static/js/2.334a546b.chunk.js.LICENSE.txt": "/progettoReact/static/js/2.334a546b.chunk.js.LICENSE.txt",
+    "static/css/main.ff5f9ad6.chunk.css.map": "/progettoReact/static/css/main.ff5f9ad6.chunk.css.map",
+    "static/js/2.5339e3f2.chunk.js.LICENSE.txt": "/progettoReact/static/js/2.5339e3f2.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/progettoReact/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.22f2c74e.js",
+    "static/js/runtime-main.f732287b.js",
     "static/css/2.a67478a1.chunk.css",
-    "static/js/2.334a546b.chunk.js",
-    "static/css/main.15f65739.chunk.css",
-    "static/js/main.43541db0.chunk.js"
+    "static/js/2.5339e3f2.chunk.js",
+    "static/css/main.ff5f9ad6.chunk.css",
+    "static/js/main.f283fd8f.chunk.js"
   ]
 }
