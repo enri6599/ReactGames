@@ -1,10 +1,10 @@
 .f4square {
-    /*display: block;*/
-    border: none;
-    /*float: left;*/
-    height: 80px;
-    width: 80px;
-    /*background-image: url(../img/base.png);*/
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 90px;
+    max-height: 90px;
+    width: 12vw; /* larghezza rispetto alla dimensione totale dello schermo*/
+    height: 12vw;
     border-radius: 50%;
     border: solid blue;
     background-color: white;
@@ -12,19 +12,14 @@
 
 
   .X{
-    /*background-image: url('../img/rosso.png');*/
     background-color: red;
   }
   
   .O{
-    /*background-image: url('../img/giallo.png');*/
     background-color: yellow;
   }
 
   .f4square:focus {
     outline: none;
   }
-
-  .col{
-    flex-grow: 0 !important;
-  }
+  

@@ -7,14 +7,6 @@ body{
   text-align: center;
 }
 
-.game-info {
-  margin-left: 20px;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
 
 
 ul.header li {
@@ -38,7 +30,7 @@ ul.header li a:hover{
   background-color: blue;
 }
 
-.btn{
+.history .btn {
   margin: 2px;
   background-color: blue !important;
 }

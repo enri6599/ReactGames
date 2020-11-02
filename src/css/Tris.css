@@ -1,6 +1,12 @@
-ol, ul {
-  padding-left: 0px;
+
+.history ol{
+  padding: 0px;
   list-style-type: none;
+  display: inline;
+}
+
+.history ol li{
+  display: inline;
 }
 
 .squareTris {

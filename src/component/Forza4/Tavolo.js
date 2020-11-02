@@ -1,34 +1,31 @@
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container} from 'reactstrap';
 
-function Tavolo(props){
-	let tavolo=[];
-	for(let i=0;i<7;i++){
-		tavolo.push(
-			<Col key={i}>
-				<Colonna onClick={()=>props.onClick(i)} valori={props.griglia[i]}/>
-			</Col>
-		);
+function CreaGioco(props){
+	
+	let tabella=[];
+	for(let i=5; i>=0;i--){
+		let colonne=[];
+		
+		for(let j=0;j<7;j++){
+			colonne.push(
+				<Col key={j}><Cella onClick={()=>props.onClick(j)} valore={props.griglia[j][i]}/></Col>
+			);
+		}
+		tabella.push(<Row key={i} className="flex-nowrap no-gutters">{colonne}</Row>);
 	}
-	return <Row className="flex-nowrap no-gutters">{tavolo}</Row>;
-}
 
-function Colonna(props){
-	let colonna=[];
-			for(let i=5;i>=0;i--){
-				colonna.push(
-					<Row className="flex-nowrap no-gutters" key={i}><Cella onClick={props.onClick} valore={props.valori[i]}/></Row>
-				);
-			}
-	return colonna;
+	return(
+		tabella
+	);
 }
 
 function Cella(props) {
-	let classname="f4square "+props.valore;
+	let classname="f4square "+(props.valore?props.valore:"");
 
 	return (
-	<Col><button onClick={props.onClick} className={classname}></button></Col>
+		<button onClick={props.onClick} className={classname}></button>
 	);
 }
 
 
-export default Tavolo;
+export default CreaGioco;

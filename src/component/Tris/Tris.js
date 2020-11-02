@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Component} from 'react';
-import {Button, Container, Row, Col, Alert} from 'reactstrap';
+import {Button, Container, Row, Col, Badge} from 'reactstrap';
+import {faRedo} from '@fortawesome/free-solid-svg-icons';
 import "../../css/Tris.css";
 
 function Square (props){
@@ -37,7 +39,6 @@ class Board extends Component {
   render() {
     return (
         this.renderSquare()
-        
     );
   }
 }
@@ -87,11 +88,9 @@ class Tris extends Component {
     let winner = calculateWinner(current.squares);
 
     const moves = history.map((step,move) => {
-      let [riga, colonna]=[Math.floor(step.buttonclicked/3)+1, step.buttonclicked%3+1]
-      
       const desc = move ?
-        'Vai alla mossa ' + move+' ('+ riga+' '+colonna+')':
-        'Ricomincia la partita';
+        'Mossa ' + move:
+        (<i><FontAwesomeIcon icon={faRedo}/>  Ricomincia partita</i>);
       return (
         <li key={move}>
           <Button color="primary" onClick={() => this.jumpTo(move)}>{desc}</Button>
@@ -111,17 +110,20 @@ class Tris extends Component {
 
     return (
       <Container>
-        <Row className="justify-content-center">
-          <Col>
-            <Alert color="danger">{status}</Alert>
-            <Board 
-              current={current}
-              onClick={(i)=>this.handleClick(i)}
-              winline={winner?winner.winline:null}
-            />
+        <Row >
+          <Col className="mx-auto flex-grow-0">
+            <Badge color="primary">{status}</Badge>
+            <div className="mt-2">
+              <Board 
+                current={current}
+                onClick={(i)=>this.handleClick(i)}
+                winline={winner?winner.winline:null}
+              />
+            </div>
           </Col>
-          <Col md="auto">
-              <ol>{moves}</ol>
+          <Col md className="d-block d-md-none"><hr /></Col>
+          <Col xs="7" sm ="5"  md="4" lg="3" className="mx-auto history">
+            <ol>{moves}</ol>
           </Col>
         </Row>
       </Container>

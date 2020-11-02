@@ -1,11 +1,11 @@
 import '../../css/Forza4.css';
 import {Component} from 'react';
-import {Button} from 'reactstrap';
-import Tavolo from './Tavolo';
+import {Button, Row, Col} from 'reactstrap';
 import checkWin from './controlloVittoria';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowLeft, faArrowRight, faRedo} from '@fortawesome/free-solid-svg-icons';
-import 'font-awesome/css/font-awesome.min.css';
+import CreaGioco from './Tavolo';
+
 
 class Forza4 extends Component{
 	constructor(props){
@@ -82,21 +82,25 @@ class Forza4 extends Component{
 
 
 		return(
-			<div className="game">
-				
-				<Tavolo onClick={(i)=>this.handleClick(i)} griglia={history[stepNum].griglia}/>
-				<div className="game-info">
-					<div>
-						<Button color="primary" disabled={btnBackDis} onClick={()=>this.modStep(-1)}><FontAwesomeIcon icon={faArrowLeft}/></Button>
-						<Button color="primary" disabled={btnFrontDis} onClick={()=>this.modStep(1)} ><FontAwesomeIcon icon={faArrowRight}/></Button>
-						<Button color="primary" onClick={()=>this.ricomincia()}><FontAwesomeIcon icon={faRedo}/></Button>
-					</div>
-					<div color='primary'>{turno}</div>
-					<div >{stato}</div>
+			<div>
+				<Row className="no-gutters">
+					<Col >
+						<Row className="d-block no-gutters history">
+							<Button className="d-inline" color="primary" disabled={btnBackDis} onClick={()=>this.modStep(-1)}><FontAwesomeIcon icon={faArrowLeft}/></Button>	
+							<Button className="d-inline" color="primary" disabled={btnFrontDis} onClick={()=>this.modStep(1)} ><FontAwesomeIcon icon={faArrowRight}/></Button>
+							<Button className="d-inline" color="primary" onClick={()=>this.ricomincia()}><FontAwesomeIcon icon={faRedo}/></Button>
+						</Row>
+						<Row className="justify-content-center">{turno}</Row>
+						<Row className="justify-content-center">{stato}</Row>
+					</Col>
+				</Row>
+				<Row className="no-gutters">
+					<Col className="p-1 flex-grow-0 mx-auto">
+						<CreaGioco onClick={(i)=>this.handleClick(i)} griglia={history[stepNum].griglia}/>
+					</Col>
 					
-				</div>
+				</Row>
 			</div>
-			
 		);
 	}
 
