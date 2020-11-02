@@ -30,7 +30,3 @@
 .squareTris:focus {
   outline: none;
 }
-
-.kbd-navigation .squareTris:focus {
-  background: #ddd;
-}
