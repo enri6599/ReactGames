@@ -15,8 +15,8 @@ function App() {
         </ul>
         <div className="content">
           <Switch>
-            <Route exact path="/"> <Forza4/> </Route>
-            <Route path="/Tris"> <Tris/> </Route>
+            <Route exact path="/" component={()=><Forza4/>} />
+            <Route path="/Tris"  component={()=><Tris/>} />
             
           </Switch>
           
