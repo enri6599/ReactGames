@@ -8,7 +8,7 @@ function CreaGioco(props){
 		
 		for(let j=0;j<7;j++){
 			colonne.push(
-				<Col key={j}><Cella onClick={()=>props.onClick(j)} valore={props.griglia[j][i]}/></Col>
+				<Col key={j} onClick={()=>props.onClick(j)}><Cella valore={props.griglia[j][i]}/></Col>
 			);
 		}
 		tabella.push(<Row key={i} className="flex-nowrap no-gutters">{colonne}</Row>);
@@ -23,7 +23,7 @@ function Cella(props) {
 	let classname="f4square "+(props.valore?props.valore:"");
 
 	return (
-		<button onClick={props.onClick} className={classname}></button>
+		<button className={classname}></button>
 	);
 }
 
