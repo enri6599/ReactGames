@@ -1,7 +1,6 @@
-# progettoReact
+# ReactGames
 
 Un piccolo progettino per prendere confidenza con react
 
-Ho creato un paio di giochini:
-Tris
-Forza 4
+Ho realizzato l'implementazione di un paio di semplici giochi da tavolo:
+Tris e Forza 4
