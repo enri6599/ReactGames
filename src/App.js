@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="sito">
       <HashRouter>
-        <h1>Giochi in React</h1>
+        <h1>React Games</h1>
         <ul className="header">
           <li key='h0'><Link to="/">Forza4</Link></li>
           <li key='h1'><Link to="/Tris">Tris</Link></li>
