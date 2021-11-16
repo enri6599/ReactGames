@@ -1,8 +1,8 @@
 {
-  "name": "progetto",
+  "name": "reactgames",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://enri6599.github.io/progettoReact/",
+  "homepage": "https://enri6599.github.io/ReactGames/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
