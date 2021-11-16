@@ -90,8 +90,8 @@ class Forza4 extends Component{
 							<Button className="d-inline" color="primary" disabled={btnFrontDis} onClick={()=>this.modStep(1)} ><FontAwesomeIcon icon={faArrowRight}/></Button>
 							<Button className="d-inline" color="primary" onClick={()=>this.ricomincia()}><FontAwesomeIcon icon={faRedo}/></Button>
 						</Row>
-						<Row className="justify-content-center">{turno}</Row>
-						<Row className="justify-content-center">{stato}</Row>
+						<Row className="justify-content-center no-gutters">{turno}</Row>
+						<Row className="justify-content-center no-gutters">{stato}</Row>
 					</Col>
 				</Row>
 				<Row className="no-gutters">
